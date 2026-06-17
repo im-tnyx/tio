@@ -1,0 +1,141 @@
+# ============================================================
+# TIO MONOREPO - .gitignore
+# Flutter (Mobile) + Next.js (Web) + Python (Backend)
+# ============================================================
+
+# ----------------------------
+# Environment & Secrets
+# ----------------------------
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+*.pem
+*.key
+*.secret
+
+# ----------------------------
+# Node / npm / pnpm
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+
+# ----------------------------
+# Next.js (apps/web)
+# ----------------------------
+.next/
+out/
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# ----------------------------
+# Turbo
+# ----------------------------
+.turbo/
+
+# ----------------------------
+# Flutter / Dart (apps/mobile)
+# ----------------------------
+# Build outputs
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+apps/mobile/android/.gradle/
+apps/mobile/android/local.properties
+apps/mobile/android/key.properties
+apps/mobile/android/app/debug.keystore
+apps/mobile/android/app/release/
+apps/mobile/android/app/*.jks
+apps/mobile/android/captures/
+apps/mobile/android/.idea/
+apps/mobile/android/app/google-services.json
+
+# iOS
+apps/mobile/ios/Flutter/flutter_export_environment.sh
+apps/mobile/ios/Flutter/Generated.xcconfig
+apps/mobile/ios/Flutter/.last_build_id
+apps/mobile/ios/.symlinks/
+apps/mobile/ios/Pods/
+apps/mobile/ios/Podfile.lock
+apps/mobile/ios/Runner.xcworkspace/xcshareddata/
+apps/mobile/ios/GoogleService-Info.plist
+apps/mobile/ios/firebase_app_id_file.json
+
+# Generated Dart/Flutter
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# ----------------------------
+# Python (backend/nutrition-service)
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# ----------------------------
+# IDE & Editors
+# ----------------------------
+.idea/
+*.iml
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-snippets
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs & Debugging
+# ----------------------------
+logs/
+*.log
+*.log.*
+crash.log
+crash.out.log
+
+# ----------------------------
+# Supabase local
+# ----------------------------
+supabase/.branches/
+supabase/.temp/
+
+# ----------------------------
+# Archive / Temp
+# ----------------------------
+archive/
+*.tmp
+*.temp
+*.bak
+*.orig

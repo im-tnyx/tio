@@ -1,0 +1,10 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "G:\\dev\\flutter-sdk\\bin\\flutter.bat build apk -t lib/src/main.dart",
+    "lint": "G:\\dev\\flutter-sdk\\bin\\flutter.bat analyze",
+    "test": "G:\\dev\\flutter-sdk\\bin\\flutter.bat test"
+  }
+}

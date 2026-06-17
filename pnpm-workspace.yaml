@@ -1,0 +1,7 @@
+packages:
+  - "apps/*"
+  - "backend/*"
+  - "packages/*"
+allowBuilds:
+  sharp: true
+storeDir: G:\dev\.pnpm-store
