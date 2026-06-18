@@ -24,10 +24,13 @@ class _SplashRouteState extends State<SplashRoute> {
   }
 
   void _handleEffect(SplashEffect effect) {
+    if (!mounted) return;
     if (effect is SplashNavigateToWelcome) {
-      if (mounted) {
-        context.go(AppRoutes.welcome);
-      }
+      context.go(AppRoutes.welcome);
+    } else if (effect is SplashNavigateToOnboarding) {
+      context.go(AppRoutes.onboarding);
+    } else if (effect is SplashNavigateToMain) {
+      context.go(AppRoutes.main);
     }
   }
 

@@ -81,8 +81,18 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _handleMockLogin() {
-    // Navigate straight to onboarding as a mock developer user
-    context.go('/onboarding');
+    // Smart routing: if onboarding is done, go to main; else start onboarding
+    final onboardingProvider = Provider.of<OnboardingProvider>(context, listen: false);
+    if (onboardingProvider.state.name.isNotEmpty) {
+      context.go('/main');
+    } else {
+      context.go('/onboarding');
+    }
+  }
+
+  void _skipToMain() {
+    // Dev shortcut: go directly to main dashboard without any auth or onboarding
+    context.go('/main');
   }
 
   @override
@@ -180,9 +190,20 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Divider(),
                 const SizedBox(height: Dimens.spaceL),
                 SecondaryButton(
-                  text: 'Quick Dev Mode (Bypass Auth/Local)',
+                  text: 'Dev Mode — Resume Onboarding / Go to Main',
                   onPressed: _handleMockLogin,
                   expand: true,
+                ),
+                const SizedBox(height: Dimens.spaceS),
+                TextButton(
+                  onPressed: _skipToMain,
+                  child: Text(
+                    'Skip for now — Browse App without account',
+                    style: TextStyle(
+                      color: theme.colorScheme.onSurfaceVariant,
+                      fontSize: 13,
+                    ),
+                  ),
                 ),
               ],
             ],
