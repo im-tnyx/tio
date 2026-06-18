@@ -98,7 +98,7 @@ class _ActivityStepWidgetState extends State<ActivityStepWidget> {
                               style: theme.textTheme.titleMedium?.copyWith(
                                 fontWeight: widget.selectedActivity == 'sedentary'
                                     ? FontWeight.bold
-                                    : FontWeight.medium,
+                                    : FontWeight.w500,
                                 color: widget.selectedActivity == 'sedentary'
                                     ? theme.colorScheme.primary
                                     : theme.colorScheme.onSurface,
@@ -140,7 +140,7 @@ class _ActivityStepWidgetState extends State<ActivityStepWidget> {
                               style: theme.textTheme.titleMedium?.copyWith(
                                 fontWeight: widget.selectedActivity == 'light'
                                     ? FontWeight.bold
-                                    : FontWeight.medium,
+                                    : FontWeight.w500,
                                 color: widget.selectedActivity == 'light'
                                     ? theme.colorScheme.primary
                                     : theme.colorScheme.onSurface,
@@ -182,7 +182,7 @@ class _ActivityStepWidgetState extends State<ActivityStepWidget> {
                               style: theme.textTheme.titleMedium?.copyWith(
                                 fontWeight: widget.selectedActivity == 'active'
                                     ? FontWeight.bold
-                                    : FontWeight.medium,
+                                    : FontWeight.w500,
                                 color: widget.selectedActivity == 'active'
                                     ? theme.colorScheme.primary
                                     : theme.colorScheme.onSurface,
@@ -224,7 +224,7 @@ class _ActivityStepWidgetState extends State<ActivityStepWidget> {
                               style: theme.textTheme.titleMedium?.copyWith(
                                 fontWeight: widget.selectedActivity == 'very_active'
                                     ? FontWeight.bold
-                                    : FontWeight.medium,
+                                    : FontWeight.w500,
                                 color: widget.selectedActivity == 'very_active'
                                     ? theme.colorScheme.primary
                                     : theme.colorScheme.onSurface,

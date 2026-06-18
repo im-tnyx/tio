@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/theme/tokens/foundation/dimens.dart';
 import '../../../../core/widgets/action_buttons.dart';
-import '../../onboarding/presentation/provider/onboarding_provider.dart';
+import '../../../onboarding/presentation/provider/onboarding_provider.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

@@ -22,10 +22,6 @@ class SectionRenderer extends StatelessWidget {
           step: step,
           onTypingDone: onTypingDone,
         );
-      default:
-        return Center(
-          child: Text('Section $section, Step $step not implemented yet'),
-        );
     }
   }
 }

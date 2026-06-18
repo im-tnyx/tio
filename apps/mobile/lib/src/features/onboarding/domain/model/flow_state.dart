@@ -17,7 +17,7 @@ class FlowState {
     if (currentSectionIndex >= 0 && currentSectionIndex < flow.length) {
       return flow[currentSectionIndex];
     }
-    return OnboardingSection.intro;
+    return OnboardingSection.data;
   }
 
   FlowState copyWith({

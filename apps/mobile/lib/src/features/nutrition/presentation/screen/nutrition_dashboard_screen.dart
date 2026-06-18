@@ -95,8 +95,8 @@ class _NutritionDashboardScreenState extends State<NutritionDashboardScreen> {
             child: Chip(
               label: Text(_isLive ? 'Supabase Live' : 'Offline Mock'),
               backgroundColor: _isLive
-                  ? Colors.green.withOpacity(0.15)
-                  : Colors.amber.withOpacity(0.15),
+                  ? Colors.green.withValues(alpha: 0.15)
+                  : Colors.amber.withValues(alpha: 0.15),
               labelStyle: TextStyle(
                 color: _isLive ? Colors.green : Colors.amber,
                 fontWeight: FontWeight.bold,
